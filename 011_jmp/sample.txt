@@ -1,0 +1,4 @@
+# 2つのjmp命令を交互に行き来する
+0: eb 00	# jmp +2
+2: eb fc	# jmp -2
+egrep -c '(vmx|svm)' /proc/cpuinfo
